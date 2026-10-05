@@ -1,0 +1,407 @@
+{
+  "roe": {
+    "version": "1.0-DSSC-STANDARD",
+    "doctrine": "Indian MoD Counter-UAS Rules of Engagement (DSSC Staff College Training Baseline)",
+    "notes": "Default doctrinal matrix. Instructors can modify this JSON or via Instructor Portal without changing application code.",
+    "rules": {
+      "bird": {
+        "name": "Avian Target (Decoy)",
+        "correct": [
+          "ignore"
+        ],
+        "acceptable": [],
+        "penalty": [
+          "kinetic",
+          "jam",
+          "capture",
+          "escalate"
+        ]
+      },
+      "civilian_quad": {
+        "name": "Commercial Drone",
+        "correct": [
+          "jam",
+          "escalate"
+        ],
+        "acceptable": [
+          "capture"
+        ],
+        "penalty": [
+          "kinetic"
+        ]
+      },
+      "recon_quad": {
+        "name": "Military Recon Quadcopter",
+        "correct": [
+          "jam"
+        ],
+        "acceptable": [
+          "escalate",
+          "capture"
+        ],
+        "penalty": [
+          "ignore"
+        ]
+      },
+      "strike_quad": {
+        "name": "FPV Kamikaze / Loitering Munition",
+        "correct": [
+          "kinetic",
+          "jam"
+        ],
+        "acceptable": [
+          "capture"
+        ],
+        "penalty": [
+          "ignore"
+        ]
+      },
+      "fixed_wing": {
+        "name": "Fixed-Wing Attack Platform",
+        "correct": [
+          "kinetic",
+          "escalate"
+        ],
+        "acceptable": [
+          "jam"
+        ],
+        "penalty": [
+          "ignore"
+        ]
+      }
+    }
+  },
+  "units": {
+    "unit_15_ad": {
+      "id": "unit_15_ad",
+      "name": "15 Air Defence Regiment (Airspace Denial Taskforce)",
+      "location": "Northern Sector HQ",
+      "assignedSeed": 4721,
+      "assignedMissionId": "urban_night_mixed",
+      "traineeIds": [
+        "tr_01",
+        "tr_02",
+        "tr_03",
+        "tr_04",
+        "tr_05"
+      ]
+    }
+  },
+  "trainees": {
+    "tr_01": {
+      "id": "tr_01",
+      "name": "Capt. Vikram Rathore",
+      "rank": "Captain",
+      "unitId": "unit_15_ad",
+      "sessionsCount": 27,
+      "avgScore": 54,
+      "skills": {
+        "night_detection": 1115,
+        "degraded_sensors": 939,
+        "decoy_rejection": 1205,
+        "threat_classification": 796,
+        "swarm_prioritisation": 979,
+        "roe_compliance": 1006
+      },
+      "banditArms": {
+        "tpl_night_decoy_heavy": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_degraded_sensor_swarm": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_fast_low_strike": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_multi_vector_saturation": {
+          "a": 2,
+          "b": 3
+        }
+      }
+    },
+    "tr_02": {
+      "id": "tr_02",
+      "name": "Lt. Ananya Sharma",
+      "rank": "Lieutenant",
+      "unitId": "unit_15_ad",
+      "sessionsCount": 11,
+      "avgScore": 82,
+      "skills": {
+        "night_detection": 1000,
+        "degraded_sensors": 1000,
+        "decoy_rejection": 940,
+        "threat_classification": 1190,
+        "swarm_prioritisation": 1110,
+        "roe_compliance": 1000
+      },
+      "banditArms": {
+        "tpl_night_decoy_heavy": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_degraded_sensor_swarm": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_fast_low_strike": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_multi_vector_saturation": {
+          "a": 2,
+          "b": 2
+        }
+      }
+    },
+    "tr_03": {
+      "id": "tr_03",
+      "name": "Subedar Major R. Singh",
+      "rank": "Subedar Major",
+      "unitId": "unit_15_ad",
+      "sessionsCount": 18,
+      "avgScore": 91,
+      "skills": {
+        "night_detection": 1290,
+        "degraded_sensors": 1240,
+        "decoy_rejection": 1000,
+        "threat_classification": 1000,
+        "swarm_prioritisation": 1000,
+        "roe_compliance": 1310
+      },
+      "banditArms": {
+        "tpl_night_decoy_heavy": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_degraded_sensor_swarm": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_fast_low_strike": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_multi_vector_saturation": {
+          "a": 2,
+          "b": 2
+        }
+      }
+    },
+    "tr_04": {
+      "id": "tr_04",
+      "name": "Havildar K. Rao",
+      "rank": "Havildar",
+      "unitId": "unit_15_ad",
+      "sessionsCount": 8,
+      "avgScore": 71,
+      "skills": {
+        "night_detection": 910,
+        "degraded_sensors": 890,
+        "decoy_rejection": 820,
+        "threat_classification": 1000,
+        "swarm_prioritisation": 1000,
+        "roe_compliance": 1000
+      },
+      "banditArms": {
+        "tpl_night_decoy_heavy": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_degraded_sensor_swarm": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_fast_low_strike": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_multi_vector_saturation": {
+          "a": 2,
+          "b": 2
+        }
+      }
+    },
+    "tr_05": {
+      "id": "tr_05",
+      "name": "Naik M. Sharma",
+      "rank": "Naik",
+      "unitId": "unit_15_ad",
+      "sessionsCount": 6,
+      "avgScore": 68,
+      "skills": {
+        "night_detection": 1000,
+        "degraded_sensors": 1000,
+        "decoy_rejection": 1000,
+        "threat_classification": 880,
+        "swarm_prioritisation": 790,
+        "roe_compliance": 1000
+      },
+      "banditArms": {
+        "tpl_night_decoy_heavy": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_degraded_sensor_swarm": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_fast_low_strike": {
+          "a": 2,
+          "b": 2
+        },
+        "tpl_multi_vector_saturation": {
+          "a": 2,
+          "b": 2
+        }
+      }
+    }
+  },
+  "sessions": [
+    {
+      "id": "sess_1791105653746",
+      "traineeId": "tr_01",
+      "scenarioId": "urban_night_mixed",
+      "scenarioName": "Phase 2: Urban Night Complex Multi-Vector Threat",
+      "seed": 4721,
+      "score": 12,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T09:20:53.746Z",
+      "eventCount": 2
+    },
+    {
+      "id": "sess_1791107239581",
+      "traineeId": "tr_01",
+      "scenarioId": "urban_night_mixed",
+      "scenarioName": "Phase 2: Urban Night Complex Multi-Vector Threat",
+      "seed": 4721,
+      "score": 12,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T09:47:19.581Z",
+      "eventCount": 4
+    },
+    {
+      "id": "sess_1791125571532",
+      "traineeId": "tr_01",
+      "scenarioId": "urban_night_mixed",
+      "scenarioName": "Phase 2: Urban Night Complex Multi-Vector Threat",
+      "seed": 4721,
+      "score": 7,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T14:52:51.532Z",
+      "eventCount": 5
+    },
+    {
+      "id": "sess_1791125637834",
+      "traineeId": "tr_01",
+      "scenarioId": "urban_night_mixed",
+      "scenarioName": "Phase 2: Urban Night Complex Multi-Vector Threat",
+      "seed": 4721,
+      "score": 12,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T14:53:57.834Z",
+      "eventCount": 2
+    },
+    {
+      "id": "sess_1791125691127",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 0,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T14:54:51.127Z",
+      "eventCount": 3
+    },
+    {
+      "id": "sess_1791126483658",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 0,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T15:08:03.658Z",
+      "eventCount": 2
+    },
+    {
+      "id": "sess_1791126517618",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 0,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T15:08:37.618Z",
+      "eventCount": 6
+    },
+    {
+      "id": "sess_1791126564372",
+      "traineeId": "tr_01",
+      "scenarioId": "proc_tpl_multi_vector_saturation_90700",
+      "scenarioName": "ADVERSARY DRILL: Multi-Directional Converging Airspace Breach (Diff 3)",
+      "seed": 90700,
+      "score": 24,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T15:09:24.372Z",
+      "eventCount": 8
+    },
+    {
+      "id": "sess_1791126687492",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 0,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T15:11:27.492Z",
+      "eventCount": 2
+    },
+    {
+      "id": "sess_1791127088676",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 57,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-04T15:18:08.676Z",
+      "eventCount": 5
+    },
+    {
+      "id": "sess_1791205462046",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 24,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-05T13:04:22.046Z",
+      "eventCount": 4
+    },
+    {
+      "id": "sess_1791205599979",
+      "traineeId": "tr_01",
+      "scenarioId": "tutorial_basic",
+      "scenarioName": "Phase 1: Basic Airspace Intrusion (Daylight)",
+      "seed": 1001,
+      "score": 0,
+      "grade": "UNSATISFACTORY",
+      "timestamp": "2026-10-05T13:06:39.979Z",
+      "eventCount": 12
+    },
+    {
+      "id": "sess_1791205699686",
+      "traineeId": "tr_01",
+      "scenarioId": "urban_night_mixed",
+      "scenarioName": "Phase 2: Urban Night Complex Multi-Vector Threat",
+      "seed": 4721,
+      "score": 60,
+      "grade": "DEVELOPING (NEEDS DRILL)",
+      "timestamp": "2026-10-05T13:08:19.686Z",
+      "eventCount": 12
+    }
+  ]
+}
