@@ -4,3 +4,32 @@ dist/
 *.log
 data/*.db
 data/*.sqlite
+
+
+# Dependencies
+node_modules/
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment/secrets
+.env
+.env.*
+
+# Build output
+dist/
+build/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
